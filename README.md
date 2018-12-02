@@ -1,12 +1,12 @@
-# Python で CSV ファイルのデータ処理
+# Python で行う CSV ファイルのデータ処理
 
 This repository is in personal use.
 
-## Anaconda をインストールして Python 実行環境を準備する
+## Anaconda で Python 実行環境を準備する
 
-[Anaconda](https://www.anaconda.com/) は Python 実行環境とパッケージ管理をまとめて簡単に行ってくれる。しかもインストールが簡単。
+[Anaconda](https://www.anaconda.com/) は Python 実行環境とパッケージ管理をまとめて簡単に行ってくれる。インストールが簡単なので初心者向け。
 
-簡単にインストールするなら Anaconda Navigator をインストールすればいい。Mac のアプリになっていて、インストールするだけで Python の環境準備が完了する。Mac でのインストール方法は https://qiita.com/ShibaNDD/items/61624a947651caee40a0 を参照（現在は Python 3.7 がインストールされる）。
+一番楽なのは Anaconda Navigator をインストールすればいい。Mac のアプリになっていて、インストールするだけで Python の環境準備が完了する。Mac でのインストール方法は https://qiita.com/ShibaNDD/items/61624a947651caee40a0 を参照（現在は Python 3.7 がインストールされる）。
 
 インストールができたらターミナルを開き、Python のバージョンを確認する。
 
@@ -15,9 +15,11 @@ $ python -V
 Python 3.7.0
 ```
 
-バージョンが `3.7.x` なら Anaconda の Python が使われている。（バージョンが `2.7.x` なら Mac のデフォルトの Python が使われているため、Anaconda の Python ではない。）
+バージョンが `3.7.x` なら Anaconda の Python が使われているのでインストール成功。（バージョンが `2.7.x` なら Mac のデフォルトの Python が使われているため、Anaconda の Python ではない。）
 
-## convert.py を実行する
+## データ処理の Python スクリプトを実行する
+
+目標はこのリポジトリにある `convert.py` を実行すること。
 
 まずこのリポジトリをダウンロードする。（右上に Clone or download ボタンがありますよね？）
 
