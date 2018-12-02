@@ -45,3 +45,10 @@ $ python convert.py
 $ open output.csv
 ```
 
+## ライブラリの解説
+
+`convert.py` の中で pandas を使っている。pandas は表計算を支援するライブラリで、CSV ファイルをいろいろデータ処理するならこれ。
+
+ドキュメントは https://pandas.pydata.org/pandas-docs/stable/index.html
+
+pandas の入門記事はググるといろいろ出てくる。とりあえず DataFrame クラスと Series クラスが理解できれば使えるようになる。

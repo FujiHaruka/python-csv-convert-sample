@@ -1,4 +1,3 @@
-import csv
 import pandas as pd
 
 MAIN_COLUMN_NAMES = ["COUNTRY", "Country", "PRODUCT", "Product", "SECTOR", "Sector", "FLOW", "Flow"]
