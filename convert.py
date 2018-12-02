@@ -7,16 +7,25 @@ TIME_COLUMN_NAME = "TIME"
 VALUE_COLUMN_NAME = "Value"
 
 def get_representative_rows(csv_data):
+    """
+    CSV データの中で MAIN_COLUMN_NAMES の値が等しい行をまとめてグループにし、各グループから１行ずつ代表行を適当に取得する
+    """
     duplicates_dropped = csv_data.drop_duplicates(KEY_COLUMN_NAMES)
     return duplicates_dropped.iterrows()
 
 def get_time_column_names(csv_data):
+    """
+    CSV データの中で TIME 行の値を重複なしに全部取得する
+    """
     unique_time_rows = csv_data.drop_duplicates([TIME_COLUMN_NAME])
     time_column_names = sorted([ row[TIME_COLUMN_NAME] for index, row in unique_time_rows.iterrows() ])
     return time_column_names
 
 
 def get_rows_from_representative_row(csv_data, representative_row):
+    """
+    MAIN_COLUMN_NAMES の値が代表行と等しい行をすべて取得する
+    """
     row_selector = None
     row_selectors = [ csv_data[column_name] == representative_row[column_name] for column_name in KEY_COLUMN_NAMES ]
     for selector in row_selectors:
@@ -28,6 +37,7 @@ def get_rows_from_representative_row(csv_data, representative_row):
 
 if __name__ == "__main__":
 
+    # 入出力のファイル名を変更するにはここを編集する
     input_file = "./samples/original.csv"
     output_file = "output.csv"
 
