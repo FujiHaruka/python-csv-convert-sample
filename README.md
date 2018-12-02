@@ -31,12 +31,15 @@ $ cd path/to/python-csv-convert
 `convert.py` を実行してみる。
 
 ```
+# python [スクリプトファイル名] で python スクリプトを実行する
 $ python convert.py
 ```
 
-すると、`output.csv` ファイルが作成される。`convert.py` スクリプトがやっていることは、 `samples/original.csv` ファイルを読み込んで、データ処理を行い、`output.csv` を出力する。
+すると、`output.csv` ファイルが作成される。
 
-`output.csv` の中身を確認すると、データ処理後の CSV ファイルになっている。
+`convert.py` スクリプトがやっていることは、 `samples/original.csv` ファイルを読み込んで、データ処理を行い、`output.csv` を出力する。
+
+`output.csv` の中身を確認すると、データ処理後の CSV ファイルになっているはず。
 
 ```sh
 $ open output.csv
